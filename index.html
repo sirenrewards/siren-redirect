@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Siren Rewards Redirect</title>
+    <script>
+        // Detect device
+        var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+        // iPhone / iPad
+        if (/iPhone|iPad|iPod/i.test(userAgent)) {
+            window.location.href = "https://apps.apple.com/ca/app/siren-rewards/id6755801344";
+        }
+        // Android
+        else if (/android/i.test(userAgent)) {
+            window.location.href = "https://play.google.com/store/apps/details?id=ca.sirenrewards.app";
+        }
+        // Desktop fallback
+        else {
+            window.location.href = "https://sirenrewards.ca";
+        }
+    </script>
+</head>
+<body>
+    <p>Redirecting…</p>
+</body>
+</html>
